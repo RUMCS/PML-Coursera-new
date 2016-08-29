@@ -2,7 +2,7 @@ FINAL PROJECT – PRACTICAL MACHINE LEARNING
 ==========================================
 As a first step we download the datasets using the read.csv function. Many invalid values were detected during the data analysis and 
 they were taken care of, values as “NA”, and “#DIV/0!”. We are unable of using any ML processes if data contains any of these 
-aforementioned values. First we calculate the 
+aforementioned values.  
 
 We found that 60 variables have completed data , therefore we will use these variables to build the prediction algorithm. 
 From the structure of the data, we can see that the first 6 
