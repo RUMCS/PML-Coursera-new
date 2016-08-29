@@ -1,5 +1,5 @@
 FINAL PROJECT – PRACTICAL MACHINE LEARNING
-
+==========================================
 As a first step we download the datasets using the read.csv function. Many invalid values were detected during the data analysis and 
 they were taken care of, values as “NA”, and “#DIV/0!”. We are unable of using any ML processes if data contains any of these 
 aforementioned values. First we calculate the 
@@ -13,6 +13,7 @@ subjects are performing. Therefore, we are going to leave those 6 columns out be
 columns easier to deal with, we will go ahead and convert all features to numeric class.
 
 Cross Validation
+================
 In this case, we will center in using two of the most used prediction algorithms namely RF and GBM.,
 For this we divide the test set into two splits for CROSS VALIDATION. First we will allocate 80% of the data to the train model and 
 20% to make a validation.
@@ -20,6 +21,7 @@ For this we divide the test set into two splits for CROSS VALIDATION. First we w
 We will apply both models to predict, and we will choose the one with better accuracy, provided by the OOB estimation of error.
 
 First we try the Random Forrest model, the output of the fitted model is:
+                 ====================
 Call:
  randomForest(formula = classe ~ ., data = trainData, method = "rf",      prox = TRUE) 
                Type of random forest: classification
@@ -36,6 +38,7 @@ D    0    0   17 2555    1 0.0069957248
 E    0    0    1    5 2880 0.0020790021
 
 Then we apply the Generalized Boosted Regression model.
+                  =====================================
 Next, we will try the Generalized Boosted Regression Models.
 Stochastic Gradient Boosting 
 
